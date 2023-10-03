@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urdu</title>
+</head>
+<script src="script.js"></script>
+<style>
+    html{
+        background-color: black;
+        color: aqua;
+    }
+    .menu{
+        font-size: x-large;
+        text-align: center;
+    }
+    .standard,.page_range{
+        display: inline-block;
+    }
+    iframe{
+        width: 100%;
+        height: 600px;
+        border: none;
+        margin-top: 2px;
+    }
+    select{
+        margin: 2px;
+        text-align: center;
+        background-color: black;
+        color: cyan;
+        font-size: x-large;
+        border-radius: 10px;
+        border: 3px solid red;
+    }
+    select:focus{
+        border: 1px solid yellow;
+    }
+    .download{
+        display: none;
+        color: black;
+        padding: 1%;
+        margin: 2%;
+        border: 3px solid blue;
+        border-radius: 10px;
+    }
+    .download a{
+        text-decoration: none;
+        font-size: x-large;
+        color: white;
+    }
+    @media only screen and (max-width: 385px) {
+        .standard,.page_range{
+            display: block;
+        }
+        select{
+            width: 90%;
+        }
+        iframe{
+            width: 100%;
+            height: 775px;
+        }
+    }
+</style>
+<body>
+    <div class="menu">
+        <div class="genre">
+            <select id="genre" onchange="s()">
+                <option value="baag_e_urdu">Baag-e-Urdu</option>
+                <option value="balbharti">Balbharti</option>
+                <option value="kumarbharti">Kumarbharti</option>
+                <option value="taroof_e_urdu">Taroof-e-Urdu</option>
+                <option value="yuvakbharti">Yuvakbharti</option>
+                <option value="download">Downloads</option>
+            </select>
+        </div>
+        <div class="standard">
+            <!--label for="branch">Branch:</label-->
+            <select id="standard" onchange="x()">
+                <option value="std9">Std 9</option>
+                <option value="std10">Std 10</option>
+            </select>
+        </div>
+        <div class="page_range">
+            <!--label for="topic">Topic:</label-->
+            <select id="page_range" onchange="z()">
+                <option value="std_1_pr_1-30">1-30</option>
+                <option value="std_1_pr_31-60">31-60</option>
+                <option value="std_1_pr_61-90">61-90</option>
+                <option value="all9">All</option>
+            </select>
+        </div>
+    </div>
+    <iframe src="Baag-e-Urdu Std 9/pr_1-30.html" id="frame"></iframe>
+    <div class="download">
+        <header style="text-align: center;color: red;">
+            <h1>Download the textbooks in PDF format:</h1>
+        </header>
+        <h2 style="color: lime;">Baag-e-Urdu Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Baag-e-Urdu Std 9.pdf" download="
+                Baag-e-Urdu Std 9" title="Baag-e-Urdu Std 9">Download Baag-e-Urdu Std 9 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Baag-e-Urdu Std 10.pdf" download="
+                Baag-e-Urdu Std 10" title="Baag-e-Urdu Std 10">Download Baag-e-Urdu Std 10 (.pdf)</a>
+            </li>
+        </ol>
+        <h2 style="color: lime;">Balbharti Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Balbharti Urdu Part-1 Std 1.pdf" download="
+                Balbharti Urdu Part-1 Std 1" title="Balbharti Urdu Part-1 Std 1">Download Balbharti Urdu Part-1 Std 1 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Urdu Part-2 Std 1.pdf" download="
+                Balbharti Urdu Part-2 Std 1" title="Balbharti Urdu Part-2 Std 1">Download Balbharti Urdu Part-2 Std 1 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Urdu Part-3 Std 1.pdf" download="
+                Balbharti Urdu Part-3 Std 1" title="Balbharti Urdu Part-3 Std 1">Download Balbharti Urdu Part-3 Std 1 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Urdu Part-4 Std 1.pdf" download="
+                Balbharti Urdu Part-4 Std 1" title="Balbharti Urdu Part-4 Std 1">Download Balbharti Urdu Part-4 Std 1 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Urdu Std 2.pdf" download="
+                Balbharti Urdu Std 2" title="Balbharti Urdu Std 2">Download Balbharti Urdu Std 2 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Urdu Std 3.pdf" download="
+                Balbharti Urdu Std 3" title="Balbharti Urdu Std 3">Download Balbharti Urdu Std 3 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Urdu Std 4.pdf" download="
+                Balbharti Urdu Std 4" title="Balbharti Urdu Std 4">Download Balbharti Urdu Std 4 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Urdu Std 5.pdf" download="
+                Balbharti Urdu Std 5" title="Balbharti Urdu Std 5">Download Balbharti Urdu Std 5 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Urdu Std 6.pdf" download="
+                Balbharti Urdu Std 6" title="Balbharti Urdu Std 6">Download Balbharti Urdu Std 6 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Urdu Std 7.pdf" download="
+                Balbharti Urdu Std 7" title="Balbharti Urdu Std 7">Download Balbharti Urdu Std 7 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Urdu Std 8.pdf" download="
+                Balbharti Urdu Std 8" title="Balbharti Urdu Std 8">Download Balbharti Urdu Std 8 (.pdf)</a>
+            </li>
+        </ol>
+        <h2 style="color: lime;">Kumarbharti Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Kumarbharti Urdu Std 9.pdf" download="
+                Kumarbharti Urdu Std 9" title="Kumarbharti Urdu Std 9">Download Kumarbharti Urdu Std 9 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Kumarbharti Urdu Std 10.pdf" download="
+                Kumarbharti Urdu Std 10" title="Kumarbharti Urdu Std 10">Download Kumarbharti Urdu Std 10 (.pdf)</a>
+            </li>
+        </ol>
+        <h2 style="color: lime;">Taroof-e-Urdu Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Taroof-e-Urdu Std 5.pdf" download="
+                Taroof-e-Urdu Std 5" title="Taroof-e-Urdu Std 5">Download Taroof-e-Urdu Std 5 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Taroof-e-Urdu Std 6.pdf" download="
+                Taroof-e-Urdu Std 6" title="Taroof-e-Urdu Std 6">Download Taroof-e-Urdu Std 6 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Taroof-e-Urdu Std 7.pdf" download="
+                Taroof-e-Urdu Std 7" title="Taroof-e-Urdu Std 7">Download Taroof-e-Urdu Std 7 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Taroof-e-Urdu Std 8.pdf" download="
+                Taroof-e-Urdu Std 8" title="Taroof-e-Urdu Std 8">Download Taroof-e-Urdu Std 8 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Taroof-e-Urdu Std 9.pdf" download="
+                Taroof-e-Urdu Std 9" title="Taroof-e-Urdu Std 9">Download Taroof-e-Urdu Std 9 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Taroof-e-Urdu Std 10.pdf" download="
+                Taroof-e-Urdu Std 10" title="Taroof-e-Urdu Std 10">Download Taroof-e-Urdu Std 10 (.pdf)</a>
+            </li>
+        </ol>
+        <h2 style="color: lime;">Yuvakbharti Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Yuvakbharti Urdu Std 11.pdf" download="
+                Yuvakbharti Urdu Std 11" title="Yuvakbharti Urdu Std 11">Download Yuvakbharti Urdu Std 11 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Yuvakbharti Urdu Std 12.pdf" download="
+                Yuvakbharti Urdu Std 12" title="Yuvakbharti Urdu Std 12">Download Yuvakbharti Urdu Std 12 (.pdf)</a>
+            </li>
+        </ol>
+        <h2 style="color: lime;">All Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Urdu.zip" download="Urdu">Download Urdu Language - All .pdf in one (.zip)</a>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
